@@ -33,7 +33,7 @@ def set_potential(Z, Zs, alpha):
     The charge is negative for protons in units of electron charge!
   """
   global potential
-  radial.potential(-1, 0, 0)
+  radial.potential(Z, Zs, alpha)
   potential = lambda r: Z/r + Zs/r * np.exp(-alpha*r)
 
 

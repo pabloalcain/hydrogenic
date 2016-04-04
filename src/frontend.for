@@ -1,6 +1,7 @@
       SUBROUTINE POTENTIAL(Z, ZS, A)
 C     Get Z, ZS and A and create the grid and spline interpolation
       IMPLICIT DOUBLE PRECISION (A-H,O-Z), INTEGER*4 (I-N)
+      DOUBLE PRECISION, INTENT(IN) :: Z, ZS, A
       CHARACTER*12 FILEN
       PARAMETER (NDIM=10000)
       PARAMETER (SL=137.03599976D0,PI=3.1415926535897932D0)
@@ -13,7 +14,7 @@ C
 C  ****  Read potential parameters.
 C
    10 CONTINUE
-      ALPHA=ABS(ALPHA)
+      ALPHA=ABS(A)
 C
 C  ****  Potential radial grid.
 C
