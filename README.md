@@ -1,4 +1,4 @@
-#Simulation of hydrogenic atoms
+# Simulation of hydrogenic atoms
 
 This software is used in Quantum Chemistry course in University of
 Buenos Aires. For more reference, go to the
